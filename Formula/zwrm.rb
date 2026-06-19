@@ -7,14 +7,14 @@ class Zwrm < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://releases.zwrm.eu/zwrmd/v0.11.2/zwrm-darwin-arm64"
-      sha256 "7c2d47d49a7665af8445de0740b18049566aeae4b327b924205e3856dd49713e"
+      sha256 "33f4100407a0013113ce397d3711ac05bb3bd272a0e71104272a3f4a5dba95e2"
 
       def install
         bin.install "zwrm-darwin-arm64" => "zwrm"
       end
     elsif Hardware::CPU.intel?
       url "https://releases.zwrm.eu/zwrmd/v0.11.2/zwrm-darwin-amd64"
-      sha256 "9ef7087016047381d1e8d04cfa59b460cea2db605d76fa7a8fadadc32db3cb7f"
+      sha256 "2363bb72da57a40bcd178247fb92975529977c1aa63436887f3539b1ea5e867e"
 
       def install
         bin.install "zwrm-darwin-amd64" => "zwrm"
@@ -25,14 +25,14 @@ class Zwrm < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://releases.zwrm.eu/zwrmd/v0.11.2/zwrm-linux-arm64"
-      sha256 "9f7bdb31900f8827316069bc7c28a52134897ad908048cde613b38669a69579e"
+      sha256 "aa298e5ecae791c1cd9136589fcef40576e6dc0426883f55e3194f7105f741ca"
 
       def install
         bin.install "zwrm-linux-arm64" => "zwrm"
       end
     elsif Hardware::CPU.intel?
       url "https://releases.zwrm.eu/zwrmd/v0.11.2/zwrm-linux-amd64"
-      sha256 "915dff0528185fef2ab354fbe3aff49f47f7e1f31bc2f01e05977f753a1875d5"
+      sha256 "abc5c12363599e2ac2f3f60af859c410bdbaa67fa556dd622df0bdd85139ef3a"
 
       def install
         bin.install "zwrm-linux-amd64" => "zwrm"
