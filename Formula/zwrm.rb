@@ -1,20 +1,20 @@
 class Zwrm < Formula
   desc "CLI for deploying and managing microVMs on ZWRM"
   homepage "https://github.com/zwrm-eu/zwrm"
-  version "0.35.16"
+  version "0.35.17"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://releases.zwrm.eu/zwrmd/v0.35.16/zwrm-darwin-arm64"
-      sha256 "518cd7654db6c273e341e15e89d69d5636e405e37b0dbb9b8eaaa2952725c340"
+      url "https://releases.zwrm.eu/zwrmd/v0.35.17/zwrm-darwin-arm64"
+      sha256 "f181b65ede0a4dee01111c7dfb40698beabc9fffdd8a8c6227e1cb6f37f5b1f6"
 
       def install
         bin.install "zwrm-darwin-arm64" => "zwrm"
       end
     elsif Hardware::CPU.intel?
-      url "https://releases.zwrm.eu/zwrmd/v0.35.16/zwrm-darwin-amd64"
-      sha256 "4ff0e8803c92b488b8bd96416fa7a783b96f9104e114a0cdeded0fbd91dd1702"
+      url "https://releases.zwrm.eu/zwrmd/v0.35.17/zwrm-darwin-amd64"
+      sha256 "8aebed7bdbf00a9f17ed5bcfc11440c99bb6061ee220094631c5d5b7ae0ed36b"
 
       def install
         bin.install "zwrm-darwin-amd64" => "zwrm"
@@ -24,15 +24,15 @@ class Zwrm < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://releases.zwrm.eu/zwrmd/v0.35.16/zwrm-linux-arm64"
-      sha256 "5fac13275a3041ee5a765d30009db7fdf1146c7ccdc9156c93a025d95b73cec0"
+      url "https://releases.zwrm.eu/zwrmd/v0.35.17/zwrm-linux-arm64"
+      sha256 "461124783ed3b9694c001c4114fa47ccadcb51ebdd0a1570e3e8d01a329b6459"
 
       def install
         bin.install "zwrm-linux-arm64" => "zwrm"
       end
     elsif Hardware::CPU.intel?
-      url "https://releases.zwrm.eu/zwrmd/v0.35.16/zwrm-linux-amd64"
-      sha256 "392cbcdeb331d6510acbf6cc314d00a0c27949eb85f13b71ca0b3ee73eb263ba"
+      url "https://releases.zwrm.eu/zwrmd/v0.35.17/zwrm-linux-amd64"
+      sha256 "673bcc824d149716543a4d4ba8856ba9d8a7007d59c93f5ebbdf7db9d116524b"
 
       def install
         bin.install "zwrm-linux-amd64" => "zwrm"
